@@ -1,0 +1,26 @@
+.golova {
+    background-color: red;
+    height: 100px;
+}
+.zagolovok
+ {
+    font-size: 24px;
+    color: white;
+}
+.osnovnoje{
+    background-color: blue;
+    font-size:  18px;
+    height: 300px;
+    color: white;
+
+}
+.pogreb{
+    background-color: green;
+    font-size: 18px;
+    height: 100px;
+    color: white;
+}
+
+.formatted-text {
+    font-style: oblique;
+}
