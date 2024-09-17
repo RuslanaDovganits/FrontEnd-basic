@@ -1,15 +1,26 @@
-.inner-div1{
-   background-color: blue; 
+.inner-div1 {
+   background-color: blue;
    height: 100px;
    width: 100px;
 }
-.inner-div2{
+
+.inner-div2 {
    background-color: brown;
    height: 100px;
    width: 100px;
 }
-.inner-div3{
-   background-color:yellow;
+
+.inner-div3 {
+   background-color: yellow;
    height: 100px;
    width: 100px;
+}
+
+.inner-div1,
+.inner-div2,
+.inner-div3 {
+   color: aqua;
+}
+.all-divs{
+   color: black;
 }

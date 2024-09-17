@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 500px;
+}
+
+.header {
+    background-color:brown;
+    height: 150px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+
+
+}
+
+
+.main {
+    background-color:darkorchid;
+    height: calc(100vh - 340px);
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+
+
+
+
+
+
+}
+
+.footer {
+    background-color: brown;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+
+
+}
