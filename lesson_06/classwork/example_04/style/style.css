@@ -1,0 +1,27 @@
+
+footer {
+    background-color: darkblue;
+    height: 400px;
+    padding-left: 40px;
+}
+
+.footer-items {
+    display: flex;
+    height: 100%;
+    gap: 70px;
+    justify-content: flex-start;
+}
+
+.footer-col {
+    flex-basis: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+

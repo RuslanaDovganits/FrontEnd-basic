@@ -1,0 +1,38 @@
+
+.container {
+    
+    background-color: aqua;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center
+    
+    /* gap: 30px */
+;
+
+}
+
+.item {
+    background-color: chartreuse;
+     height: 20px;
+     display: flex;
+   
+}
+
+
+
+.container2 {
+    background-color: yellow;
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 50px;
+}
+
+.item2 {
+    background-color:cadetblue;
+   height: 20px;
+}
