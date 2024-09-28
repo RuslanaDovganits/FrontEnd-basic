@@ -8,8 +8,11 @@ let string2 = string.replace(/[.,:]/g, '');
 
 
 let reverce = string2.split(" ");
-
+let reverceString = "";
 for (let i = reverce.length - 1; i >= 0; i--) {
-    reverceString = console.log(reverce[i]);
+    //reverceString = console.log(reverce[i]);
+    reverceString += reverce[i] + " ";
 
 }
+console.log(reverceString);
+

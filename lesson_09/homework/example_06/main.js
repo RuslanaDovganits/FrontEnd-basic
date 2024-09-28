@@ -4,13 +4,11 @@
 
 let string = "Итак, самое длинное научное название: метилпропенилендигидроксициннаменилакрилическая кислота."
 let string2 = string.replace(/[.,:]/g, '');
-console.log("replase: " + string2);
+console.log(string2);
 const newString = string2.split(" ");
 
 
-for (let i = 0; i < newString.length; i++) {
-    console.log(newString[i]);
-}
+
 
 
 

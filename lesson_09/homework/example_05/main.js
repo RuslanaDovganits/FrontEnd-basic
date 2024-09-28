@@ -1,11 +1,13 @@
 // Объявить массив из 5 элементов и заполнить его любыми числами. 
 //Присвоить 5 переменным значения из массива с помощью деструктуризации.
 
-const array = [-24, -10, 2, 34, 9];
+const arrayOfNumbers = [-24, -10, 2, 34, 9];
 
-arrayFirst = console.log("first: " + array[0]);
-arraySecond = console.log("second: " + array[1]);
-arrayThird = console.log("third: " + array[2]);
-arrayFourth = console.log("fourth: " + array[3]);
-arrayFift = console.log("fift: " + array[4]);
+const [num1, num2, num3, num4, num5] = arrayOfNumbers;
 
+console.log(num1);
+console.log(num4);
+
+
+const example = `I am ${num4} years old`;  
+console.log(example);
