@@ -4,9 +4,9 @@
 
 let string = "Итак, самое длинное научное название: метилпропенилендигидроксициннаменилакрилическая кислота."
 let string2 = string.replace(/[.,:]/g, '');
-console.log(string2);
-const newString = string2.split(" ");
 
+const newString = string2.split(" ");
+console.log(string2);
 
 
 
