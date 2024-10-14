@@ -7,25 +7,22 @@
 
 
 function fizzBuzz(n) {
-    let aarNumbers = [];
-    for (let i = 1; i < n; i++) {
-
-        if (i % 3 === 0) {
-            aarNumbers[i] = i + " fizz";
-        } if ((i % 5 === 0)) {
-            aarNumbers[i] = i + " buzz";
+   
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz")
         }
-        if ((i % 3 === 0) && (i % 5 === 0)) {
-            aarNumbers[i] = i + " fizzbuzz";
-            
-        } 
+        if (i % 3 === 0) {
+            console.log('fizz');
+        }
+        if ((i % 5 === 0)) {
+            console.log("bizz");
+        } else {
+            console.log(i);
+        }
 
-        aarNumbers.push([i]);
     }
 
-    return aarNumbers;
-
-
+    
 }
-console.log(fizzBuzz(20));
-
+    console.log(fizzBuzz(16));

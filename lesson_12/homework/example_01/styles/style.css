@@ -1,0 +1,18 @@
+.body {
+    background-color: aquamarine;
+}
+
+.title {
+    text-align: center;
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.height {
+    margin-left: 10px;
+}
+
+.weight {
+    margin-left: 18px;
+
+}

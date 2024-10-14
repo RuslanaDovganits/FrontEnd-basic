@@ -10,20 +10,12 @@ console.log(intersection([1, 5, 4, 2], [8, 91, 4, 1, 3]));
 */
 
 function intersection(arr1, arr2) {
-    const newArr1 = [];
-    const newArr2 = [];
-    for (let i = 0; i < arr1.length; i++) {
-        newArr1.push([arr1[i]])
 
-        for (let i = 0; i < arr2.length; i++) {
-            newArr2.push(arr2[i]);
+    
+    const duplicatedValues = [...new Set(arr1)].filter(item => arr2.includes(item));
 
-
-        }
-
-
-    }
-
-
+   
+return duplicatedValues;
 }
-console.log(intersection([1, 5, 4, 2], [8, 91, 4, 1, 3]));
+console.log(intersection([1, 1, 0, 0, 0, 1, 5, 4, 2], [7, 12, 1, 1, 1, 1, 1, 0, 0, 0, 0]));
+

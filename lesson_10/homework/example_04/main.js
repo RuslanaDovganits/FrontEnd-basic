@@ -15,7 +15,7 @@ function isPrimeNumber(n) {
     }
     return true;  // Если не нашлось делителей, число простое
 }
-console.log(isPrimeNumber(7));
+console.log(isPrimeNumber(23));
 
 
 
@@ -24,7 +24,7 @@ function arrayOfNumbers(n) {
     let array = [];
     for (let i = 1; i < n; i++) {
         if (isPrimeNumber(i)) {
-            array.push([i]);
+            array.push(i);
         }
     }
     return array;
