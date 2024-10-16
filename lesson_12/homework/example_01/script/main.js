@@ -11,7 +11,7 @@ function buttonClickHandler() {
     const bmi = weight / (height * height);
     buttonElement.textContent = ("Ваш BMI = " + bmi.toFixed(1));
 
-    if (height < 0 && height < 0) {
+    if (height < 0 || weight < 0) {
         alert("Пожалуйста введите корректные данные для роста и веса!")
        
     }
