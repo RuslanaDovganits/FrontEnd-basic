@@ -22,17 +22,13 @@ const links = [
 
 const allListElement = document.querySelector('ul');
 
-const linksModified = links.map(createNewListItem);
 
-
-function createNewListItem (element) {
-  const newListItemElement = document.createElement('li');
-  newListItemElement.textContent = element.href;
-  return newListItemElement;
-}
-console.log(linksModified);
-
-allListElement.append(...linksModified);
+links.map(element => {
+     newListItemElement = document.createElement('li');
+    newListItemElement.textContent = element.href;
+    allListElement.append(newListItemElement);
+  
+});
 
 
 
@@ -46,9 +42,3 @@ allListElement.append(...linksModified);
 
 //   });
 
-// function createAndAddnewListItem(element) {
-//   const newListItemElement = document.createElement('li');
-//   newListItemElement.textContent = element.href;
-//   allListElement.append(newListItemElement);
-// }
-// links.forEach(createAndAddnewListItem);
