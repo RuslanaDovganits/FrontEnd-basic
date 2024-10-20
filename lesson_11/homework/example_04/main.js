@@ -6,15 +6,15 @@
 
 const ObjToObj = (obj) => {
     let resultObj = {};
-    let values = Object.entries(obj) 
+    let values = Object.entries(obj)
 
     values.forEach(element => {
-        resultObj[element[0]] = typeof(element[1]);
+        resultObj[element[0]] = { value: element[1], type: typeof element[1] };
     });
 
-return resultObj;
-    
-  
+    return resultObj;
+
+
 }
 console.log(ObjToObj({ a: 'a', '36.6': 36.6, 'John Doe': 'John Doe' }));
 

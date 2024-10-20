@@ -24,7 +24,7 @@ let players = [{ name: "Alex", height: 190, weight: 85, sport: "rugby" },
 
 const addGoals = (human) => {
     let playersWithGoals = { ...human };
-    playersWithGoals['goal'] = Math.floor((Math.random()) * 31) + 1;
+    playersWithGoals['goal'] = Math.floor((Math.random()) * 20) + 1;
     return playersWithGoals;
 }
 
