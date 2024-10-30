@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет расходов и доходов</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scrypts/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Учет расходов и доходов</h1>
+        <div class="actions">
+            <input type="text" class="input" placeholder="Описание..." id="description" />
+            <input type="number" class="input" placeholder="Сумма..." id="amount" />
+            <select id="type" class="select">
+                <option value="income">Доход</option>
+                <option value="expense">Расход</option>
+            </select>
+            <button class="btn" id="addTransaction">Добавить</button>
+        </div>
+        <div class="filter">
+            <button class="btn" id="all">Все</button>
+            <button class="btn" id="income">Доходы</button>
+            <button class="btn" id="expense">Расходы</button>
+        </div>
+        <ul class="transaction-list" id="transactionList">
+            <!-- Здесь будут транзакции -->
+        </ul>
+        <div class="balance">
+            <h2>Общий баланс: <span id="totalBalance">0</span> EURO</h2>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

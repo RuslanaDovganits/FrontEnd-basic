@@ -23,12 +23,19 @@ const links = [
 const allListElement = document.querySelector('ul');
 
 
-links.map(element => {
-     newListItemElement = document.createElement('li');
-    newListItemElement.textContent = element.href;
-    allListElement.append(newListItemElement);
-  
+const hrefToLi = links.map(element => {
+
+  const newListItemElement = document.createElement('a');
+  newListItemElement.href = element.href;
+  newListItemElement.text = element.text;
+  newListItemElement.textContent = element.text;
+  return newListItemElement;
 });
+allListElement.append(...hrefToLi);
+
+
+
+
 
 
 
@@ -36,7 +43,7 @@ links.map(element => {
 
 // links.forEach(
 //   element => {
-//     const newListItemElement = document.createElement('li');
+//     let newListItemElement = document.createElement('li');
 //     newListItemElement.textContent = element.href;
 //     allListElement.append(newListItemElement);
 

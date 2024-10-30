@@ -10,7 +10,7 @@ const robots = [
     { name: 'Colins', ver: 21 }
 ];
 
-let sortRobotsByVersion = robots.sort((a, b) =>
+let sortRobotsByVersion = [...robots].sort((a, b) =>
     (b.ver - a.ver)
 );
 console.log(sortRobotsByVersion)
