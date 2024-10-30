@@ -2,9 +2,11 @@ const inputElement = document.querySelector('.input');
 const buttonElement = document.querySelector('.button');
 const timerElement = document.querySelector('#timer');
 const audioElement = document.querySelector('#audio')
-
+const finitoElement = document.querySelector('.finito')
 console.log('start');
 buttonElement.addEventListener('click', buttonClickHandler);
+
+
 
 function buttonClickHandler() {
     let i = inputElement.value;
@@ -15,8 +17,9 @@ function buttonClickHandler() {
 
             if (i < 0) {
                 clearInterval(intervalId);
-               audioElement.play();
-               
+                finitoElement.style.display = 'block';
+                audioElement.play();
+
             }
 
         }, 1000
