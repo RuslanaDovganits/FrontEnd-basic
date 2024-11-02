@@ -25,9 +25,6 @@ fetch('https://api.github.com/users/IrinBorin/repos')
         alert('SOS')
     })
     
-
-
-
 function doSomethinWithData(repos) {
     console.log(repos);
     console.log(repos[0]);
