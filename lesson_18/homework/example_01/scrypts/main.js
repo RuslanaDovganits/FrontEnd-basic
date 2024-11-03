@@ -47,9 +47,9 @@ fetch('https://jsonplaceholder.typicode.com/todos')
                 myLiElement.addEventListener('click', taskHandler);
                 createList.append(myLiElement);
                 inputTask.value = '';
-                
-            }
+                newArrayFromToDo.push(myLiElement);
 
+            }
 
         }
 
