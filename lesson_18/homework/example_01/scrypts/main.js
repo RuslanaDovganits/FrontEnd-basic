@@ -6,9 +6,7 @@ const completed = document.getElementById('completed');
 const uncompleted = document.getElementById('uncompleted');
 const completeTask = document.querySelector('list-item');
 
-//createTask.addEventListener('click', buttonClickHandler);
 
-//let todos = [];
 fetch('https://jsonplaceholder.typicode.com/todos')
     .then((response) => {
         return response.json();
@@ -19,24 +17,45 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 
         function doSomethinWithData(toDoList) {
             createList.innerHTML = '';
-            newArrayFromToDo = toDoList.slice(0, 15).map(
+
+            newArrayFromToDo = toDoList.slice(0, 5).map(
                 (oneElementOfArrayToDo) => {
                     let liElement = document.createElement('li');
                     liElement.classList.add('list-item');
                     liElement.textContent = oneElementOfArrayToDo.title;
-                   if(oneElementOfArrayToDo.completed == true) {
-                    liElement.classList.add('list-item_done')
+                    if (oneElementOfArrayToDo.completed == true) {
+                        liElement.classList.add('list-item_done')
 
-                   }
+                    }
                     liElement.addEventListener('click', taskHandler);
 
                     return liElement;
-                }
-            )
-        }
-        createList.append(...newArrayFromToDo);
 
-    })
+                }
+
+
+
+            )
+            createList.append(...newArrayFromToDo);
+
+            createTask.addEventListener('click', buttonClickHandler);
+            function buttonClickHandler() {
+
+                const myLiElement = document.createElement('li');
+                myLiElement.textContent = inputTask.value;
+                myLiElement.classList.add('list-item');
+                myLiElement.addEventListener('click', taskHandler);
+                createList.append(myLiElement);
+                inputTask.value = '';
+                
+            }
+
+
+        }
+
+    }
+    )
+
 
 function taskHandler(event) {
     event.target.classList.toggle('list-item_done');
@@ -66,7 +85,7 @@ function filterTaskHandler(status) {
 
     }
     showTasks(...filterTasks)
-    //return filterTasks;
+
 
 
 }
