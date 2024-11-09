@@ -21,46 +21,41 @@ fetch('https://jsonplaceholder.typicode.com/todos')
             newArrayFromToDo = toDoList.slice(0, 5).map(
                 (oneElementOfArrayToDo) => {
                     let liElement = document.createElement('li');
-                    liElement.classList.add('list-item');
+                    mySuperTruperFunc(liElement);
                     liElement.textContent = oneElementOfArrayToDo.title;
                     if (oneElementOfArrayToDo.completed == true) {
                         liElement.classList.add('list-item_done')
-
                     }
-                    liElement.addEventListener('click', taskHandler);
-
                     return liElement;
-
                 }
-
-
-
             )
             createList.append(...newArrayFromToDo);
 
             createTask.addEventListener('click', buttonClickHandler);
             function buttonClickHandler() {
 
-                const myLiElement = document.createElement('li');
+                let myLiElement = document.createElement('li');
+                mySuperTruperFunc(myLiElement);
                 myLiElement.textContent = inputTask.value;
-                myLiElement.classList.add('list-item');
-                myLiElement.addEventListener('click', taskHandler);
                 createList.append(myLiElement);
                 inputTask.value = '';
                 newArrayFromToDo.push(myLiElement);
-
             }
 
         }
 
     }
     )
+function mySuperTruperFunc(element) {
+    
+    element.classList.add('list-item');
+    element.addEventListener('click', taskHandler);
 
+}
 
 function taskHandler(event) {
     event.target.classList.toggle('list-item_done');
 }
-
 
 all.addEventListener('click', () => filterTaskHandler('all'));
 completed.addEventListener('click', () => filterTaskHandler('completed'));
@@ -86,10 +81,7 @@ function filterTaskHandler(status) {
     }
     showTasks(...filterTasks)
 
-
-
 }
-
 
 function showTasks(...array) {
     createList.innerHTML = '';
